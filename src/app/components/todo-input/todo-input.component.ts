@@ -13,14 +13,14 @@ export class TodoInputComponent implements OnInit {
 
 	public todoText: string;
 
-  constructor(private todoService: TodoService) { 
+  constructor(public todoService: TodoService) { 
   	this.todoText = '';
   }
 
   ngOnInit() {
   }
 
-  private addTodo(): void{
+  public addTodo(): void{
   	this.todoService.addTodo(this.todoText);
   	this.todoText =  '';
   }
