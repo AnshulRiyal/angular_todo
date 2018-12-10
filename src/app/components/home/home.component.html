@@ -1,0 +1,12 @@
+<div class="todo-wrapper">
+    <app-header></app-header>
+    <app-todo-input></app-todo-input>
+    <div *ngFor="let todo of todoService.getTodos()">
+
+      <app-todo-item [todo]="todo"> </app-todo-item>
+      
+    </div>
+    <div style="padding: 20px;">
+    	<button [routerLink] = "['./form']" > Click to fill FORM</button>
+  	</div>
+</div>

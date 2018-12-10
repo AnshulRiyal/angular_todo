@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { TodoService } from './services/todo.service';
+import { Route, RouterModule } from '@angular/router';
+import { FormComponent } from './components/form/form.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 
 @Component({
@@ -7,6 +11,7 @@ import { TodoService } from './services/todo.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
 
 	constructor(public todoService: TodoService) { }
