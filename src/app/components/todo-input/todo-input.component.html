@@ -1,4 +1,4 @@
-<div class="todo-input-wrapper">
+<div class="todo-input-wrapper" style="padding: 20px;">
 	<input type="text" [(ngModel)]="todoText" value= {{todoText}} required minlength="6" />
 	<div *ngIf="todoText.errors.minlength">
 	    Name must be at least 4 characters long.
