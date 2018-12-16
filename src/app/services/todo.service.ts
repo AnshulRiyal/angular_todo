@@ -12,9 +12,9 @@ export class TodoService {
 
   constructor() {
   	this.todos = [
-  		new Todo(0, "qrewr"),
-  		new Todo(1, "222222"),
-  		new Todo(2, "32124")
+  		new Todo(0, "111"),
+  		new Todo(1, "222"),
+  		new Todo(2, "333")
   	];
 
   	this.nextId = 3;
