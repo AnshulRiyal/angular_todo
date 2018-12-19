@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { TodoInputComponent } from './components/todo-input/todo-input.component';
 import { TodoService } from './services/todo.service';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TodoInputComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
